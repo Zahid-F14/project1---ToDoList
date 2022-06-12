@@ -1,0 +1,114 @@
+<style>
+.wrapper {
+    margin: auto;
+    margin-top: 50px;
+    max-width: 400px;
+    min-height: 250px;
+    width: 100%;
+    background: rgb(131, 158, 247);
+    border: 2px solid rgb(234, 241, 241);
+    border-radius: 10px;
+
+
+}
+
+html {
+  
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+}
+
+body {
+    background: linear-gradient(rgb(142, 164, 190), rgb(44, 10, 236));
+    height: 100%;
+    width: 100%;
+}
+
+.wrapper header {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.wrapper input {
+    height: 20px;
+    font-size: 15px;
+    text-align: center;
+    /*margin-left: 20%;*/
+
+}
+
+.input input {
+    width: 80%;
+    height: 45px;
+    text-align: left;
+    margin-left: 10px;
+    border: 2px solid rgb(59, 102, 2);
+    border-radius: 4px;
+}
+
+.input button {
+    width: 40px;
+    height: 45px;
+    padding: 2px 0px 0px 0px;
+    background: white;
+    border: none;
+    cursor: pointer;
+    box-shadow: 2px 5px #999;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #abb5b8
+}
+
+button:active {
+    background-color: #87dd8a;
+    box-shadow: 2px 5px #666;
+    transform: translateY(2px);
+}
+
+.wrapper .taskList {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.taskList li {
+    overflow: hidden;
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    background: rgb(244, 243, 245);
+    border: 1px solid wheat;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+    margin-left: -30px;
+    padding: 0px 15px;
+
+}
+
+.taskList li span {
+    position: absolute;
+    right: -55px;
+
+    height: 100%;
+    transition: .4s ease-in-out;
+}
+
+.taskList li:hover span {
+    right: 0px;
+
+}
+
+.taskList li span button {
+    color: white;
+    font-size: 35px;
+    border-radius: 8px;
+    background: red;
+}
+</style>

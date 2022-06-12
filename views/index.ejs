@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<%- include('style'); %>
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <header>To Do App</header>
+
+            <div class="input" style="align-content: center;">
+                <form action="/" method="post">
+                    <input type="text" name="task" placeholder="Add new task">
+                    <button><i class="fa fa-plus" title="Add task"></i></button>
+                </form>
+            </div>
+
+            <ul class="taskList">
+                <% todos.forEach((todo)=>{ %>
+                    <li> <%= todo.task %> <span><button><a href="/<%-todo._id%>/delete"><i class="fa fa-trash"  title="Delete task"></a></i></button></span></li>
+                <% }) %>
+
+            </ul>
+            <div class="footer">
+                <span>You have <%- todos.length %> task remaining</span>
+                
+            </div>
+        </div>
+    </body>
+
+</html>
